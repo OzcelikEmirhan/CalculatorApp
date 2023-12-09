@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+.body{
+  margin: 0;
+  
+}
+
+#title{
+  font-size: 20px;
+  margin-top: 8px;
+  color: rgb(199, 199, 199);
+}
+
+#display{
+  height: 150px;
+  width: auto;
+  border: 3px black solid;
+  margin: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.526);
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator{
+  width: 350px;
+  height: 500px;
+  border: 3px transparent solid;
+  border-radius: 15px;
+  background-color: rgba(23, 23, 23, 0.90);
+  box-shadow: 15px 15px 10px rgba(6, 6, 6, 1);
+  cursor: pointer;
+}
+
+.topButtonList{
+  height: 30px;
+  width: 350px;
+  
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin: auto;
+  
+}
+ 
+
+.topButton{
+  height: 20px;
+  width: 50px;
+  border: 3px black solid;
+  border-radius: 6px;
+  margin: 0px -18px 0px 30px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.topButton:hover{
+  background-color: rgb(31, 31, 31);
+}
+
+#reset{
+  background-color: rgba(78, 0, 0, 0.499);
+}
+
+#reset:hover{
+  background-color: rgba(101, 0, 0, 0.499);
+}
+
+.allLists{
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+.numberButtons{
+  height: 40px;
+  width: 50px;
+  border: 3px black solid;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.623);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.numberButtons:hover{
+  background-color: rgba(55, 55, 55, 0.623);
+}
+
+.numbersBox{
+  height: 250px;
+  width: 230px;
+  margin: 10px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px black solid;
+  border-radius: 10px;
+  background-color: rgba(79, 79, 79, 0.50);
+  object-fit: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.operationsList{
+  height: 250px;
+  width: 80px;
+  margin-top: 5px;
+  border: 3px black solid;
+  border-radius: 10px;
+  background-color: rgba(79, 79, 79, 0.50);
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+
+.operationBox{
+  height: 40px;
+  width: 50px;
+  border: 3px black solid;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgba(2, 40, 10, 0.553);
+
+}
+
+.operationBox:hover{
+  background-color: rgba(5, 82, 21, 0.553);
+}
+
+#equal{
+  background-color: rgba(0, 25, 92, 0.536);
+}
+
+#equal:hover{
+  background-color: rgba(0, 48, 181, 0.536);
+}
