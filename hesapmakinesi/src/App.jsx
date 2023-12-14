@@ -16,7 +16,10 @@ function App() {
   const [trig,setTrig] = React.useState("")
   
   function addText(val){
+    if (value.length<20){
     setValue(prev=> ([...prev,val+""]))
+    }
+    
   }
   
   function reset(){
@@ -29,20 +32,26 @@ function App() {
     if (trig==("")) {
       const input= value.join("")
       setValue("")
-      setResult(math.evaluate(input))
+      setResult(math.evaluate(input).toFixed(2))
   }
     else if (trig == ("sin")) {
-      const number= parseInt(value.join(""), 10)
+      const input= value.join("")
+      setValue("")
+      const result =math.evaluate(input)
+      const number= parseInt(result, 10)
       const angle=(number * Math.PI)/180;
-      setResult(Math.sin(angle).toFixed(3));
+      setResult(Math.sin(angle).toFixed(2));
       setValue("")
       setTrig("")
     }
 
     else {
-      const number= parseInt(value.join(""), 10)
+      const input= value.join("")
+      setValue("")
+      const result =math.evaluate(input)
+      const number= parseInt(result, 10)
       const angle=(number * Math.PI)/180;
-      setResult(Math.sin(angle).toFixed(3));
+      setResult(Math.cos(angle).toFixed(2));
       setValue("")
       setTrig("")
     }
