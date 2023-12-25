@@ -17,7 +17,40 @@ function App() {
   
   function addText(val){
     if (value.length<20){
-    setValue(prev=> ([...prev,val+""]))
+        if(result !== ""){
+          setValue(result)
+          setValue(prev=> ([...prev,val+""]))
+          setResult("")
+        }
+        else if(value[value.length-1]=== "+" || 
+                value[value.length-1]=== "-" || 
+                value[value.length-1]=== "*" || 
+                value[value.length-1]=== "/" ||
+                value[value.length-1]=== "."
+                ){
+                  if(val==="+" ||
+                     val==="-" ||
+                     val==="*" ||
+                     val==="/" ||
+                     val==="." 
+                  ){
+                alert("invalid transaction")}
+                
+                else(setValue(prev=> ([...prev,val+""])))
+        } 
+          
+        else if(value==="" ){
+          if(val==="*" ||
+             val==="/" ||
+             val===".")
+             {
+              alert("invalid transaction")
+             }
+          else(setValue(prev=> ([...prev,val+""])))
+        }
+          
+        else(setValue(prev=> ([...prev,val+""])))
+        
     }
     
   }

@@ -5,6 +5,9 @@
   text-align: center;
   
 }
+:focus {
+  outline: none;
+}
 .body{
   margin: 0;
   
@@ -34,7 +37,7 @@
 
 #calculator{
   width: 350px;
-  height: 500px;
+  height: 510px;
   border: 3px transparent solid;
   border-radius: 15px;
   background-color: rgba(23, 23, 23, 0.90);
@@ -149,4 +152,13 @@
 
 #equal:hover{
   background-color: rgba(0, 48, 181, 0.536);
+}
+
+
+
+
+@media (max-width: 600px){
+  body{
+    background-color: dark-blue;
+  }
 }

@@ -5,10 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url(./assets/mathphoto.jpg);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: center;
+  
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,3 +22,12 @@ body {
   min-height: 100vh;
 }
 
+@media (min-width: 600px) {
+  body {
+      
+  background-image: url(./assets/mathphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  }
+}
